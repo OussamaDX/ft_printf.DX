@@ -3,11 +3,11 @@
 void ft_check_flags(char c,va_list args,int *len)
 {
 	if (c == 's')
-		return (ft_putstr_len(va_arg(arg,char),len));
+		return (ft_putstr_len(va_arg(arg,char *),len));
 	else if (s == 'd' || s == 'i')
 		return (ft_putnbr_len(va_arg(args,int),len));
 	else if (c == 'c')
-		return (ft_putchar_len(va_arg(args,char)));
+		return (ft_putchar_len(va_arg(args,int)));
 	else if (c == '%')
 		return (ft_putchar_len('%' ,len));
 		
