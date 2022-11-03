@@ -1,0 +1,55 @@
+ /// ////// MAKE my  own printf///
+
+first tape :
+
+	first we should make functions of printf string or character or adreese or hexadecimal ....
+
+	look at this tableu in read it :
+
+| Conversion | Short Description                                                                             |
+|------------|-----------------------------------------------------------------------------------------------|
+| %c         | Print a single character.                                                                     |
+| %s         | Print a string of characters.                                                                 |
+| %p         | The void * pointer argument is printed in hexadecimal.                                        |
+| %d         | Print a decimal (base 10) number.                                                             |
+| %i         | Print an integer in base 10.                                                                  |
+| %u         | Print an unsigned decimal (base 10) number.                                                   |
+| %x         | Print a number in hexadecimal (base 16), with lowercase.                                      |
+| %X         | Print a number in hexadecimal (base 16), with uppercase.                                      |
+| %%         | Print a percent sign.                                                                         |
+
+
+second tape :
+
+	we should again write prototype of own functions in a header in this example we have ft_printf.h
+	my  opinion in this example we dont need to write a struct soooo we skip this tape
+
+
+third tape :
+	this tape is very importante we should creat a printf file and use stdarg and use it to creat own printf
+
+		first function we creat in this file is (__check__flag__) this functio are search on own string for find % to know
+		type of own argument (number or string or character , or adreese ....)
+			in this functions finction we creat a va_list macro and we creat a string and a variabl int to know
+			how much % we find
+		wait this party is not end so we show you how his should work soo read this
+			first : we creat a condition to find %
+					char check_flag(char c,va_list args,int i);
+					if (s[i+1] == '%')
+					we write i + 1 because in this case i = 0;
+					if s  = % so he entre in this condtion to find another conditions to find type of % s or d or c .... look  at tableau
+
+			second : we creat another condition to find type of % and to know type own argument okk !
+					if c == s so that s meens we have string so we use ft_putsr
+					if c == c so that s meens we have character so we use ft_putchar
+					if c == d so that s meens we have a number witn base 10 so we use ft_putnbr
+					if c == i so that s meens we have a number witn base 10 so we use ft_//putnbr_base //(look at tableu)
+					if c == p so that s meens we have a adreese so we should creat function to show adreesses
+					if c == u  so we have creat a function print unsigned decimal number
+					if c == x hexadecimal number with lowercase
+					if c == X hexadecimal number with uppercase
+					
+
+
+
+
