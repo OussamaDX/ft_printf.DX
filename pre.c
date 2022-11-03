@@ -8,7 +8,7 @@ char oussama(int num , ...); //we could this function : varg function take a lot
 
 // first macro is va_list he pointed to fisrt argument ( ... )
 // arg he play on this example count of argument we need
-va_list arg ; // this is prototype of valist macos 
+va_list arg ; // this is prototype of valist macros 
 // is not variable !!!!!
 
 
