@@ -95,4 +95,7 @@ gp_offset The element holds the offset in bytes from reg_save_area to the place 
 fp_offset : The element holds the offset in bytes from reg_save_area to the place where the next available floating point argument register is saved. In case all argument registers have been exhausted, it is set to the value 304 (6 * 8 + 16 * 16).
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+to more inforamtions : https://stackoverflow.com/questions/4958384/what-is-the-format-of-the-x86-64-va-list-structure
+
 					made by		//////		Dx		///
