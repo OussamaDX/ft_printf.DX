@@ -74,6 +74,25 @@ A partial reimplementation of the printf in C. Handles only the following conver
 
 
 
-
+format of va_list :
+		typedef struct {
+   			unsigned int gp_offset;
+   			unsigned int fp_offset;
+   			void *overflow_arg_area;
+   			void *reg_save_area;
+				} va_list[1];	
+------------------------------------------------------------			
+The va_start Macro :
+------------------------------------------------------------
+The va_start  :  macro initializes the structure as follows:
+------------------------------------------------------------
+reg_save_area : The element points to the start of the register save area.
+------------------------------------------------------------------------------------------
+overﬂow_arg_area : This pointer is used to fetch arguments passed on the stack. It is initialized with the address of the first argument passed on the stack, if any, and then always updated to point to the start of the next argument on the stack.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+gp_offset The element holds the offset in bytes from reg_save_area to the place where the next available general purpose argument register is saved. In case all argument registers have been exhausted, it is set to the value 48 (6 * 8).
+------------------------------------------------------------------------------------------------------------------------------------------------------
+fp_offset : The element holds the offset in bytes from reg_save_area to the place where the next available floating point argument register is saved. In case all argument registers have been exhausted, it is set to the value 304 (6 * 8 + 16 * 16).
+------------------------------------------------------------------------------------------------------------------------------------------------------
 
 					made by		//////		Dx		///
