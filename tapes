@@ -1,4 +1,7 @@
  /// ////// MAKE my  own printf///
+	//base 16 is hexadecimal numbers 0 1 2 3 4 5 6 7 8 9 10 A B C D E F
+	//base 10 is decimal numbers	 0 1 2 3 4 5 6 7 8 9 10  11 12 13 14 15
+
 
 first tape :
 
@@ -18,6 +21,49 @@ first tape :
 | %X         | Print a number in hexadecimal (base 16), with uppercase.                                      |
 | %%         | Print a percent sign.                                                                         |
 
+	---------------------------------------------------------------------------------------------------------
+					we should know printf function is return length that printf
+					sooo in this project we should work in len i puth second arguemnt in all
+					functions who i write
+
+	ft_putchar :
+
+		first we creat putchar function that printf a character but we may add a second argument ,it is len
+		this arg is len to how much the character who print
+
+			 	-----------------void ft_puthar (char  c,int *len);----------------------------
+
+
+	ft_putstr :
+
+		second we creat putstr function to print string and again we add second argument yes its
+		len arg is very important arg
+		if you look in my function you see null case i write null not return because the oroginal
+		function print "null" like that i whish you undrstand me okokoko
+		next i write my function  is very simple
+
+		---------------------------void	ft_putstr(const char *s, int *len)-------------------
+
+	ft_putnbr :
+
+			third we creat puutnbr funcions to print numbers and add len in the args this function is  very
+			simple aand same time is smart because i use recursion you know that right :) you should know that			   ok i creat :
+			------
+			first condtion is special for number lower than 0 (negative number)
+			i write ('-') char and i multilpy in -1 because convert number - to postive number cause we have -
+			signe .
+			-------
+			second condtion is special for number lower than 10 (digits 0 - 9)
+			this case is very simple because i dont use Calculation sooo i use ft_putchar to print this numbers			   and we addv '0' or 48 in ascii cause we search this numbers in ascii !!!
+			-------
+			third condition is for number upper than 10 i meen {15,100,99,30...}
+			sooo first i devide this number at 10 because he give me number in the left and that return in the 			   second condtion i creat (digit number) ,
+
+			----------------------------------------------------void	ft_putnbr_len(int n, int *len)------------------------------------------------------------
+			next number again is % a 10 cause he give me number in the right and print it
+			-------
+			i wish you undestand that because is very simple dont wory and take eaassssy broo
+	
 
 second tape :
 
@@ -48,8 +94,12 @@ third tape :
 					if c == u  so we have creat a function print unsigned decimal number
 					if c == x hexadecimal number with lowercase
 					if c == X hexadecimal number with uppercase
-					
 
+			third : we puts our functions in condtion into their own function and put argument we need in own function
+Fourth tape :
+	this tape is very very importante cause we creat the original printf function okk!
 
+		first : we creat my
+		we creat all macoros we need va_list_arg_start_end ...
 
 
