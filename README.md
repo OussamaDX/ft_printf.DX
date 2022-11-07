@@ -100,7 +100,4 @@ to more inforamtions : https://stackoverflow.com/questions/4958384/what-is-the-f
 
 					made by		//////		Dx		///
 					
-					<img width="2880" alt="Screen Shot 2022-11-07 at 5 45 06 PM" src="https://user-images.githubusercontent.com/98095867/200366497-1c8abb50-5fb8-4e6e-8696-8368b5f96439.png">
-
-					
 					
